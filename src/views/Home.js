@@ -18,14 +18,8 @@ const Home = () => {
             <img id='homepage-large-logo' src={logo} alt='hope for a c++ logo' />
             <BreathingCarousel carouselItems={carouselItems} breathDuration={5000}/>
             <div className='road-map'>
-                {/* <div>Road Map</div> */}
-                {/* <CheckpointSlide 
-                    title="Checkpoint 1"
-                    cpDate={tempDate.toDateString()}
-                    breif="None"
-                /> */}
             </div>
-            <div> {"website is still under construction :)"} </div>
+            {/* <div> {""} </div> */}
         </div>
     </div>);
 };
