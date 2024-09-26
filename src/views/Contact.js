@@ -1,20 +1,35 @@
 import ContactCard from "../components/ContactCard";
 import reactLogo from "../logo.svg"
-import meanpaperPic from "../images/meanpaper_avatar.png"
+// import meanpaperPic from "../images/meanpaper_avatar.png"
+import AvatarLinks from "../AvatarLinks";
 
 // team member information json object
 const personInfo = [
-    { name: 'Dongming Liu', profilePic: meanpaperPic, email: 'ldm1833991255@gmail.com', 
-      socialMedias:{github: 'https://github.com/MeanPaper',},
+    { name: 'Dongming Liu', profilePic: AvatarLinks["Dongming Liu"]["github"], email: 'ldm1833991255@gmail.com', 
+      socialMedias:{
+        github: 'https://github.com/MeanPaper',
+        linkedin: 'https://www.linkedin.com/in/dongmingliu35/'
+      },
     },
-    { name: 'Elijah Ye', profilePic: reactLogo, email: 'elijah.gaohan.ye@gmail.com', 
-      socialMedias:{github: '',},
+    { name: 'Elijah Ye', profilePic: AvatarLinks["Elijah Ye"]["github"], email: 'elijah.gaohan.ye@gmail.com', 
+      socialMedias:{
+        github: 'https://github.com/Elijah-Ye',
+        linkedin: 'https://www.linkedin.com/in/elijahye/'
+      },
     },
-    { name: 'Owen Xu', profilePic: reactLogo, email: 'jinyuxu2@illinois.edu', 
-      socialMedias:{github: '',},
+    { name: 'Owen Xu', 
+      profilePic: reactLogo, 
+      email: 'jinyuxu2@illinois.edu', 
+      socialMedias:{
+        github: '',
+        linkedin: 'https://www.linkedin.com/in/owen-xu-38b097251/'  
+      },
     },
-    { name: 'Xinyu Wu', profilePic: reactLogo, email: 'xinyuwu2@illinois.edu', 
-      socialMedias:{github: '',},
+    { name: 'Xinyu Wu', profilePic: AvatarLinks["Xinyu Wu"]["linkedin"], email: 'xinyuwu2@illinois.edu', 
+      socialMedias:{
+        github: '',
+        linkedin: 'https://www.linkedin.com/in/xinyu-wu-0245041ba/'
+      },
     },
 ];
 

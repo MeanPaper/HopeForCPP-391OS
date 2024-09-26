@@ -3,6 +3,8 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 // please refer to boostrap icon documentation, not all social media icons are available
 const iconClassList = ['github', 'linkedin', 'youtube', 'facebook', 'instagram', 'twitter', 'wechat', ]
+const iconColors = {github: '', linkedin: '#0a66c2', youtube: 'red', 
+    facebook: '#3b5998', instagram: '#c13584', twitter: '#1da1f2', wechat: '#7bb32e', }
 
 // use to generate the links and logos for the social media
 const SocialMediaSection = ({socialMedias}) => {
@@ -19,9 +21,10 @@ const SocialMediaSection = ({socialMedias}) => {
         }
         let hasHttp = link.indexOf('https://')===0 ? true : (link.indexOf('http://')===0 ? true : false);
         link = hasHttp ? link : 'https://'+link;
-
+        
+        console.log(iconColors[item]);
         return (<a className='social-media-links' href={link} key={`${index}-${socialMedias[item]}`} target='_blank' rel="noreferrer">
-            {iconClassList.includes(item) ? <i className={`bi bi-${item}`}></i> : {item}}
+            {iconClassList.includes(item) ? <i className={`bi bi-${item}`} style={{color: iconColors[item]}}></i> : {item}}
         </a>);
     });
     return(<div className='social-media-container'>

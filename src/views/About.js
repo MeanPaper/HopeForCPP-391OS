@@ -30,8 +30,8 @@ const About = () => {
             </div>
             <div id='about-tech-section'>
                 <OsFeatureSection />
-                <h3>Checkpoints</h3>
-                <p>Still working on it... Stay Tuned!</p>
+                {/* <h3>Checkpoints</h3>
+                <p>Still working on it... Stay Tuned!</p> */}
                 {/* <p>Here are some brief descriptions and explanations for each checkpoint.</p>
                 <CheckpointLayout /> */}
                 {/* <CheckpointHolder markDownPath="../checkpointMD/checkpoint1.md" /> */}
@@ -94,14 +94,16 @@ const WebDevInfo = () => {
             </div>
             <div>
                 <h3>Something else...</h3>
-                <div>Hey there! The designer and developer, Dongming (or MeanPaper) is here!</div>
+                <div>Hey there! The designer and developer, <a href="https://github.com/MeanPaper"> Dongming (or MeanPaper)</a> is here!</div>
                 <div>The styling of the website is inspired by the styling used on 
                     <a href="https://vitejs.dev/" target="_blank" rel="noreferrer"> vite </a> (a great tool for React App but it gives some trouble when developing the website).
                 </div>
                 <div>The team/website logo is inspired by the logo of C++. </div>
-                {/* <div>Our team have a thought of updating our OS. Stay Tuned!</div> */}
-                <div>If you are a student in ECE 391 and have questions, you can come to my office hour and talk to me!</div>
-                <div>My office hour is at 10:00 AM to 12:00 PM every Friday... Sometimes, I will come a bit early and/or stay a bit longer in my OH :)</div>
+                <div>The kernel is based on x86. x86 was part of ECE 391 curriculum for quite a long time...</div>
+                <div>Recently(ummmm, sometime in 2024), ECE 391 switched to RISC-V! More excitement and fun!</div>
+                {/* <div>Our team have a thought of updating our OS. Stay Tuned! Apparently I am to busy </div> */}
+                {/* <div>If you are a student in ECE 391 and have questions, you can come to my office hour and talk to me!</div>
+                <div>My office hour is at 10:00 AM to 12:00 PM every Friday... Sometimes, I will come a bit early and/or stay a bit longer in my OH :)</div> */}
             </div>
         </>
     );
