@@ -25,7 +25,7 @@ const personInfo = [
         linkedin: 'https://www.linkedin.com/in/owen-xu-38b097251/'  
       },
     },
-    { name: 'Xinyu Wu', profilePic: AvatarLinks["Xinyu Wu"]["linkedin"], email: 'xinyuwu2@illinois.edu', 
+    { name: 'Xinyu Wu', profilePic: reactLogo, email: 'xinyuwu2@illinois.edu', 
       socialMedias:{
         github: '',
         linkedin: 'https://www.linkedin.com/in/xinyu-wu-0245041ba/'
